@@ -16,6 +16,8 @@
     "nodemon": "^3.0.3"
   },
   "dependencies": {
+    "gifwrap": "^0.10.1",
+    "jimp": "^0.22.10",
     "typescript": "^5.3.3"
   }
 }
