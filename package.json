@@ -5,7 +5,7 @@
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha dist/tests/**/*.js --timeout 10000 --exit",
     "build:watch": "tsc -w -p tsconfig.json",
     "start:dev": "nodemon dist/main.js"
   },
@@ -13,6 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "mocha": "^10.2.0",
     "nodemon": "^3.0.3"
   },
   "dependencies": {

@@ -5,5 +5,6 @@ try {
     const config = argsParser(process.argv);
     await gifResize({ ...config });
 } catch (error: any) {
+    console.log(error);
     process.stderr.write(error.message);
 }
