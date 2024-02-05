@@ -16,7 +16,7 @@ export default async function(config: OutputGifConfig) {
         throw new Error('GIF has no frames');
     }
 
-    process.stdout.write(`Resizing ${gif.frames.length} frames...`);
+    process.stdout.write(`Resizing ${gif.frames.length} frames...\n`);
     gif.frames = await Promise.all(gif.frames.map(async (frame) => resizeFrame(frame, config.scaleFactor)));
 
     await writeGif(config.outputPath, gif);
