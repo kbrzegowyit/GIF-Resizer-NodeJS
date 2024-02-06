@@ -7,7 +7,8 @@
   "scripts": {
     "test": "mocha dist/tests/**/*.js --timeout 10000 --exit",
     "build:watch": "tsc -w -p tsconfig.json",
-    "start:dev": "nodemon dist/main.js"
+    "start:dev": "nodemon dist/main.js",
+    "start:prod": "node dist/main.js"
   },
   "keywords": [],
   "author": "",
