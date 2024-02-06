@@ -1,7 +1,7 @@
 import { Gif, GifFrame, GifUtil } from 'gifwrap';
 import Jimp from 'jimp';
 
-// gif -> frames -> resize -> gif
+// GIF -> Frames -> Resize -> GIF
 
 export interface OutputGifConfig {
     inputPath: string;
